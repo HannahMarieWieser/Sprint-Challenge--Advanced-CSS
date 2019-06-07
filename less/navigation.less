@@ -1,1 +1,52 @@
 // Navigation code here
+
+.border(){
+    border:1px solid red;
+}
+
+.navbackground{
+    background-color:@nav-bg;
+}
+
+.linkstyle{
+    font-size: 16px;
+    text-decoration: none;
+    color: @nav-font;
+}
+
+.topnav{
+    width: 100%;
+    height: 100px;
+    .navbackground();
+    // position: fixed;
+    
+
+    .navwide{
+        margin:auto;
+        width: 42%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // .border();
+    }
+
+    .title{
+        padding-top: 13px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-between;
+        width: 376px;
+        padding-top: 20px;
+    }
+
+    a{
+        .linkstyle();
+    }
+
+}

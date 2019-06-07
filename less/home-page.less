@@ -1,6 +1,21 @@
 // Home Content
 
+//parametric buttom
+.buttonstyle(@backcolor, @edge, @textcolor,@howwide,@howhigh, @align, @textsize, @toppad){
+  background-color: @backcolor;
+  border-radius: @edge;
+  color: @textcolor;
+  width: @howwide;
+  height: @howhigh;
+  text-align: @align;
+  font-size: @textsize; 
+  padding-top: @toppad;
+}
+
+
 .home {
+
+  // padding-top: 100px;
 
   .intro {
 
@@ -54,11 +69,17 @@
       }
 
       p {
-        margin-bottom: 26px;
+        margin-bottom: 23px;
       }
 
       .btn {
+        .buttonstyle(@btn-bg-color, 4px, @porcelain, 100px, 35px, center, 18px, 8px)
       }
+
+      .btn:hover{
+        .buttonstyle(@porcelain,4px, @btn-bg-color , 100px, 35px, center, 18px, 8px)
+      }
+
     }
 
     .walk-img {
